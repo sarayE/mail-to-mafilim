@@ -1,0 +1,15 @@
+header {
+    text-align: center;
+    text-decoration: underline;
+}
+
+main {
+    margin: auto;
+    width: 50%;
+}
+
+form {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+}
