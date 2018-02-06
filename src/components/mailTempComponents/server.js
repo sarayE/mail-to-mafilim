@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-
+import Checkbox from 'material-ui/Checkbox';
 
 export default class Server extends Component {
     render() {
         return (
             <span>
-                <input type="checkbox" name="servers" />{this.props.server}
+                <Checkbox label={this.props.server}/>
             </span>
         );
     }
-  }
+}

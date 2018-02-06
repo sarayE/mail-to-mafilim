@@ -13,3 +13,8 @@ form {
     padding: 5px;
     border: 1px solid black;
 }
+
+legnd {
+    font-weight: bold;
+    text-decoration: underline;
+}

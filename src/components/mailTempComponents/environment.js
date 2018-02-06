@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-
 export default class Environment extends Component {
     render() {
       console.log(this.props.myEnv);

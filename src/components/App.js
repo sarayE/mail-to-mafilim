@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import MailTemp from './mail-temp';
 import myData from '../data/myData.js';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import RaisedButton from 'material-ui/RaisedButton';
 
 /*
 --App
@@ -37,14 +39,19 @@ export default class App extends Component {
     }
     
     return (
-      <div>
-        <section>
-          <button onClick={this.addMailTemp}>+ Add form</button>
-        </section>
-        <section>
-          {mailTemps}     
-        </section>
-      </div>
+      <MuiThemeProvider>
+        <div>
+          <section>
+            <RaisedButton label="+ Add form" onClick={this.addMailTemp} />
+          </section>
+          <section>
+            {mailTemps}     
+          </section>
+          <section>
+            <RaisedButton label="Send Mail" primary={true} />
+          </section>
+        </div>
+      </MuiThemeProvider>
     );
   }
 }
